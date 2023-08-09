@@ -67,7 +67,7 @@
 
   .tag-cmp {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     p {
       width: 100%;
@@ -119,29 +119,63 @@
   }
 
   div:nth-child(2) {
-    margin: 1.75rem;
+    margin: 1.25rem;
+    width: 115px;
+    height: 115px;
+  }
+
+  div:nth-child(3) {
     width: 150px;
     height: 150px;
   }
 
-  div:nth-child(3) {
+  div:nth-child(4) {
+    margin: 1.05rem;
+    width: 90px;
+    height: 90px;
+  }
+
+  div:nth-child(5) {
+    margin: 1.10rem;
+    width: 105px;
+    height: 105px;
+  }
+
+  div:nth-child(6) {
     width: 70px;
     height: 70px;
   }
 
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
-      width: 400px;
-      height: 400px;
+      width: 100px;
+      height: 100px;
     }
 
     div:nth-child(2) {
-      margin: 1.75rem;
+      margin: 1.25rem;
+      width: 115px;
+      height: 115px;
+    }
+
+    div:nth-child(3) {
       width: 150px;
       height: 150px;
     }
 
-    div:nth-child(3) {
+    div:nth-child(4) {
+      margin: 1.05;
+      width: 90px;
+      height: 90px;
+    }
+
+    div:nth-child(5) {
+      margin: 1.10rem;
+      width: 105px;
+      height: 105px;
+    }
+
+    div:nth-child(6) {
       width: 70px;
       height: 70px;
     }
