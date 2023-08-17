@@ -8,18 +8,14 @@ const abouts = [
   { title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about01 },
   { title: 'Frontend', description: 'I am a good web developer.', imgUrl: images.about02 },
   { title: 'Backend', description: 'I am a good web developer.', imgUrl: images.about03 },
-  { title: 'Fullstack', description: 'I am a good web developer.', imgUrl: images.about04 }
+  { title: 'MERN Stack', description: 'I am a good web developer.', imgUrl: images.about04 }
 ]
 
 const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that
-        <span>Good Design</span>
-        <br />
-        means
-        <span>Good Business</span>
+        I know that <span>Good Design</span><br /> means <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">
