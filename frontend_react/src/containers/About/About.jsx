@@ -3,15 +3,18 @@ import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
 import './About.scss';
-
-const abouts = [
-  { title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about01 },
-  { title: 'Front End', description: 'I am a good web developer.', imgUrl: images.about02 },
-  { title: 'Back End', description: 'I am a good web developer.', imgUrl: images.about03 },
-  { title: 'MERN Stack', description: 'I am a good web developer.', imgUrl: images.about04 }
-]
+import { urlFor, client } from '../../client';
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+      .then((data) => setAbouts(data))
+  }, []);
+
   return (
     <>
       <h2 className="head-text">
