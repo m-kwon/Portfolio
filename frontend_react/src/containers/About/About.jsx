@@ -6,8 +6,8 @@ import './About.scss';
 
 const abouts = [
   { title: 'Web Development', description: 'I am a good web developer.', imgUrl: images.about01 },
-  { title: 'Frontend', description: 'I am a good web developer.', imgUrl: images.about02 },
-  { title: 'Backend', description: 'I am a good web developer.', imgUrl: images.about03 },
+  { title: 'Front End', description: 'I am a good web developer.', imgUrl: images.about02 },
+  { title: 'Back End', description: 'I am a good web developer.', imgUrl: images.about03 },
   { title: 'MERN Stack', description: 'I am a good web developer.', imgUrl: images.about04 }
 ]
 
