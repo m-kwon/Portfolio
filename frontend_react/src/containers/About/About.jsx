@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that <span>Good Design</span><br /> means <span>Good Business</span>
+        If I don't know it, <span>I figure it out.</span>
       </h2>
 
       <div className="app__profiles">
@@ -36,6 +36,9 @@ const About = () => {
           </motion.div>
         ))}
       </div>
+      <p>
+        <strong>Committed to the idea of life-long learning,</strong> I am passionate about web development and the endless possibilities it offers. I am always seeking new challenges and opportunities to grow and improve as a developer. Whether working on a personal project or collaborating with a team, I am committed to delivering high-quality and scalable web applications that meet the needs of users and businesses.
+      </p>
     </>
   );
 }
