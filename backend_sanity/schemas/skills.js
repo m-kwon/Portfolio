@@ -21,6 +21,18 @@ export default{
               hotspot: true,
             },
         },
-
+        {
+            title: 'Type',
+            name: 'type',
+            type: 'string',
+            initialValue: 'front-end',
+            options: {
+              list: [
+                { title: 'Front-End', value: 'front-end' },
+                { title: 'Back-End', value: 'back-end' },
+                { title: 'Miscellaneous',  value: 'miscellaneous' },
+              ],
+            }
+        },
     ]
 }
