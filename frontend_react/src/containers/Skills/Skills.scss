@@ -1,5 +1,5 @@
 .app__skills {
-  flex: 1;
+  flex: .1;
   width: 100%;
   flex-direction: column;
 }
@@ -15,6 +15,11 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.app__skill-type {
+  margin: 10px;
+  padding: 2px;
 }
 
 .app__skills-list {
