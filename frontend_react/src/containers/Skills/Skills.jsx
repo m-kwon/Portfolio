@@ -21,8 +21,8 @@ const Skills = () => {
     <>
       <h2 className="head-text">Skills</h2>
 
-      <h3 className="app__skill-type">Front End</h3>
       <div className="app__skills-container">
+        <h3 className="app__skill-type">Front End</h3>
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
             skill.type === 'front-end' ?
@@ -45,52 +45,52 @@ const Skills = () => {
         </motion.div>
       </div>
 
-      <h3 className="app__skill-type">Back End</h3>
       <div className="app__skills-container">
-          <motion.div className="app__skills-list">
-            {skills.map((skill) => (
-              skill.type === 'back-end' ?
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-item app__flex"
-                key={skill.name}
+        <h3 className="app__skill-type">Back End</h3>
+        <motion.div className="app__skills-list">
+          {skills.map((skill) => (
+            skill.type === 'back-end' ?
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="app__skills-item app__flex"
+              key={skill.name}
+            >
+              <div
+                className="app__flex"
+                style={{ backgroundColor: skill.bgColor }}
               >
-                <div
-                  className="app__flex"
-                  style={{ backgroundColor: skill.bgColor }}
-                >
-                  <img src={urlFor(skill.icon)} alt={skill.name} />
-                </div>
-                <p className="p-text">{skill.name}</p>
-              </motion.div>
-              : ''
+                <img src={urlFor(skill.icon)} alt={skill.name} />
+              </div>
+              <p className="p-text">{skill.name}</p>
+            </motion.div>
+            : ''
             ))}
-          </motion.div>
-        </div>
+        </motion.div>
+      </div>
 
-      <h3 className="app__skill-type">Miscellaneous</h3>
       <div className="app__skills-container">
-          <motion.div className="app__skills-list">
-            {skills.map((skill) => (
-              skill.type === 'miscellaneous' ?
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-item app__flex"
-                key={skill.name}
+        <h3 className="app__skill-type">Miscellaneous</h3>
+        <motion.div className="app__skills-list">
+          {skills.map((skill) => (
+            skill.type === 'miscellaneous' ?
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
+              className="app__skills-item app__flex"
+              key={skill.name}
+            >
+              <div
+                className="app__flex"
+                style={{ backgroundColor: skill.bgColor }}
               >
-                <div
-                  className="app__flex"
-                  style={{ backgroundColor: skill.bgColor }}
-                >
-                  <img src={urlFor(skill.icon)} alt={skill.name} />
-                </div>
-                <p className="p-text">{skill.name}</p>
-              </motion.div>
-              : ''
-            ))}
-          </motion.div>
+                <img src={urlFor(skill.icon)} alt={skill.name} />
+              </div>
+              <p className="p-text">{skill.name}</p>
+            </motion.div>
+            : ''
+          ))}
+        </motion.div>
       </div>
     </>
   );
